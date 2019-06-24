@@ -171,19 +171,19 @@ p {
     margin: 0 2.5%;
   }
 }
-.logo {
+header .logo {
   width: 45rem;
   height: 15rem;
   margin: 0.5rem;
   padding: 0.5rem;
   object-fit: contain;
 }
-.nav-container {
+header .nav-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.nav {
+header .nav {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -191,11 +191,18 @@ p {
   padding: 1rem;
   font-size: 1.8rem;
 }
-.nav .nav-link {
-  margin-top: 14rem;
+header .nav .nav-link {
+  margin-top: 8rem;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+header .nav .nav-link:hover {
+  color: red;
+  text-decoration: underline;
 }
 @media (max-width: 800px) {
-  .nav .nav-link {
+  header .nav .nav-link {
     margin-top: 0;
   }
 }
