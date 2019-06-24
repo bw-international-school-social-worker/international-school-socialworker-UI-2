@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    font-family: 'Short Stack', cursive;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Short Stack', cursive;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @medium{
+        max-width: 800px;
+        width: 98%;
+        margin: 0 auto;
+    }
+  
+    @media @phone{
+      width: 95%;
+      margin: 0 2.5%;
+    }
+  }
