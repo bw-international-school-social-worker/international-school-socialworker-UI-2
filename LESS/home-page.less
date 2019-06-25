@@ -1,10 +1,69 @@
 .top-middle-content{
     
-    background-color: #635D5C;
+    background-color: white;
     .home{
-        // .carousel{
-            //carousel styling here
-        // }
+        .carousel {
+            .width-100();
+            .flex(center, center);
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 16px;
+            border-radius: 20px;
+            // @media(min-width: 1200px){
+            //   width: 1200px;
+            // }
+            .left-button, .right-button {
+              .flex(center);
+              color: white;
+              background-color:@educell-color;
+              font-size: 35px;
+              border-radius: 40%;
+              position: absolute;
+              width: 50px;
+              height: 43px;
+              cursor: pointer;
+              &:hover {
+                color: white;
+                background-color: grey;
+                border: 2px solid whitesmoke;
+              }
+            }
+            .left-button {
+              top: 50%; 
+              left: 25px;
+              transform: translate(0, -50%);
+            }
+            .right-button {
+              top: 50%; 
+              right: 25px;
+              transform: translate(0, -50%);
+            }
+            img {
+              .width-100();
+            //   display: none;
+            }
+            .btn {
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: @educell-color;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-family: 'Short Stack', cursive;
+              }
+              
+              .container .btn:hover {
+                background-color: black;
+              }
+
+        }
         .middle-content{
             display: flex;
             flex-wrap: wrap;
@@ -13,7 +72,7 @@
             .boxes {
                 display: flex;
                 flex-wrap:wrap;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 height: 28rem;
                 .box {
                     width: 30%;
@@ -33,6 +92,13 @@
                     background-color: #FFF1EF;
                 }
             }
+        }
+        .impact{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
         }
     }
 
