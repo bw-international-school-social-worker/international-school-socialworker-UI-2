@@ -317,3 +317,9 @@ p {
   border-radius: 2rem;
   background-color: #FFF1EF;
 }
+.top-middle-content .home .impact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
