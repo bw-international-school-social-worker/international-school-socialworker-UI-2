@@ -3,79 +3,6 @@
     background-color: white;
     .home{
         margin-top: 1.5rem;
-        .carousel {
-            .width-100();
-            .flex(center, center);
-            height: 350px;
-            position: relative;
-            overflow: hidden;
-            margin-top: 1.75rem;
-            border-radius: 2.5rem;
-            @media @medium{
-              height:300px;
-              margin-top: 1.25rem;
-            }
-            @media @phone{
-                height:250px;
-                margin-top: 0.5rem;
-              }
-            .left-button, .right-button {
-              .flex(center);
-              color: white;
-              background-color:@educell-color;
-              font-size: 35px;
-              border-radius: 40%;
-              position: absolute;
-              width: 50px;
-              height: 43px;
-              cursor: pointer;
-              &:hover {
-                color: white;
-                background-color: grey;
-                border: 2px solid whitesmoke;
-              }
-            }
-            .left-button {
-              top: 50%; 
-              left: 25px;
-              transform: translate(0, -50%);
-            }
-            .right-button {
-              top: 50%; 
-              right: 25px;
-              transform: translate(0, -50%);
-            }
-            img {
-              .width-100();
-            //   display: none;
-                @media @medium{
-                    border-radius: 1.75rem;
-                }
-                @media @phone{
-                    border-radius: 1.5rem;
-                }
-            }
-            .btn {
-                position: absolute;
-                top: 90%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                background-color: @educell-color;
-                color: white;
-                font-size: 1.8rem;
-                padding: 12px 24px;
-                border: none;
-                cursor: pointer;
-                border-radius: 5px;
-                font-family: 'Short Stack', cursive;
-              }
-              
-              .container .btn:hover {
-                background-color: black;
-              }
-
-        }
         .middle-content{
             display: flex;
             flex-wrap: wrap;
@@ -88,9 +15,13 @@
                 height: auto;
                 margin: 1rem;
                 padding: 1rem;
+                @media @medium{
+                    justify-content: center;
+                    align-content: space-between;
+                }
 
                 .box {
-                    width: 30%;
+                    width: 32%;
                     height: auto;
                     margin: 0.5rem 0 0.5rem 0;
                     padding: 0.5rem;
@@ -100,39 +31,49 @@
                     border: 0.5rem solid #680000;
                     border-radius: 2rem;
                     background-color: #FFF1EF;
+                    @media @medium{
+                        width: 100%;
+                    }
+
                     .middle-info{
-                        display:flex;
-                        justify-content: center;
+                        text-align: center;
+                    }
+                    .info{
+                        text-align: center;
                     }
                 }
             }
         }
-        .impact{
+
+    }
+}
+.impact{
+    .icon-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        .icons{
+            width: 23%;
+            height: auto;
+            margin: 0.5rem 0 0.5rem 0;
+            padding: 1rem;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            flex-direction: column;
             align-content: center;
-            .icons{
-                width: 24%;
-                height: auto;
-                margin: 0.5rem 0 0.5rem 0;
-                padding: 1rem;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                align-content: center;
-                .fas{
-                    display:flex;
-                    justify-content: center;
-                }
-                .icon-info{
-                    display:flex;
-                    justify-content: center;
-                    align-content: center;
-                    align-items: center;
-                }
+            @media @phone{
+                width: 100%;
+            }
+            .fas{
+                display:flex;
+                justify-content: center;
+                // color: green;
+            }
+            .icon-info{
+                text-align: center;
             }
         }
     }
-
 }
