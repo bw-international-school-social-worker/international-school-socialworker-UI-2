@@ -1,3 +1,6 @@
+.width-100 {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -213,7 +216,7 @@ p {
   padding: 1.5rem;
 }
 .main-navigation .nav-container .nav .nav-link:hover {
-  color: red;
+  color: #680000;
   text-decoration: underline;
 }
 @media (max-width: 800px) {
@@ -223,6 +226,52 @@ p {
 }
 .top-middle-content {
   background-color: #635D5C;
+}
+.top-middle-content .home .carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+  border-radius: 20px;
+}
+.top-middle-content .home .carousel .left-button,
+.top-middle-content .home .carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: white;
+  background-color: #680000;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.top-middle-content .home .carousel .left-button:hover,
+.top-middle-content .home .carousel .right-button:hover {
+  color: white;
+  background-color: grey;
+  border: 2px solid whitesmoke;
+}
+.top-middle-content .home .carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.top-middle-content .home .carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.top-middle-content .home .carousel img {
+  width: 100%;
 }
 .top-middle-content .home .middle-content {
   display: flex;
