@@ -1,12 +1,12 @@
 class Carousel {
     constructor(element){
         this.element = element;
-        this.leftBtn = document.querySelector('.carousel .left-button');
-        this.rightBtn = document.querySelector('.carousel .right-button');
+        this.leftBtn = document.querySelector('.left-button');
+        this.rightBtn = document.querySelector('.right-button');
         this.index = 0;
         this.image = element.querySelectorAll('img')[this.index];
         this.image.style.display = "block";
-        this.images = element.querySelectorAll(".carousel img");
+        this.images = element.querySelectorAll("img");
         this.rightBtn.addEventListener('click', () => {
             this.clickRight();
         });
