@@ -337,8 +337,14 @@ footer {
   margin: 1rem;
   padding: 1rem;
 }
+@media (max-width: 800px) {
+  .top-middle-content .home .middle-content .boxes {
+    justify-content: center;
+    align-content: space-between;
+  }
+}
 .top-middle-content .home .middle-content .boxes .box {
-  width: 30%;
+  width: 32%;
   height: auto;
   margin: 0.5rem 0 0.5rem 0;
   padding: 0.5rem;
@@ -349,18 +355,26 @@ footer {
   border-radius: 2rem;
   background-color: #FFF1EF;
 }
-.top-middle-content .home .middle-content .boxes .box .middle-info {
-  display: flex;
-  justify-content: center;
+@media (max-width: 800px) {
+  .top-middle-content .home .middle-content .boxes .box {
+    width: 100%;
+  }
 }
-.top-middle-content .home .impact {
+.top-middle-content .home .middle-content .boxes .box .middle-info {
+  text-align: center;
+}
+.top-middle-content .home .middle-content .boxes .box .info {
+  text-align: center;
+}
+.impact .icon-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   align-content: center;
 }
-.top-middle-content .home .impact .icons {
-  width: 24%;
+.impact .icon-section .icons {
+  width: 23%;
   height: auto;
   margin: 0.5rem 0 0.5rem 0;
   padding: 1rem;
@@ -369,13 +383,15 @@ footer {
   flex-direction: column;
   align-content: center;
 }
-.top-middle-content .home .impact .icons .fas {
+@media (max-width: 500px) {
+  .impact .icon-section .icons {
+    width: 100%;
+  }
+}
+.impact .icon-section .icons .fas {
   display: flex;
   justify-content: center;
 }
-.top-middle-content .home .impact .icons .icon-info {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+.impact .icon-section .icons .icon-info {
+  text-align: center;
 }

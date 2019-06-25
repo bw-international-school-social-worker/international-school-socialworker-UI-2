@@ -28,6 +28,7 @@
               position: absolute;
               width: 50px;
               height: 43px;
+            //   opacity: 0.3;
               cursor: pointer;
               &:hover {
                 color: white;
@@ -88,9 +89,13 @@
                 height: auto;
                 margin: 1rem;
                 padding: 1rem;
+                @media @medium{
+                    justify-content: center;
+                    align-content: space-between;
+                }
 
                 .box {
-                    width: 30%;
+                    width: 32%;
                     height: auto;
                     margin: 0.5rem 0 0.5rem 0;
                     padding: 0.5rem;
@@ -100,39 +105,50 @@
                     border: 0.5rem solid #680000;
                     border-radius: 2rem;
                     background-color: #FFF1EF;
+                    @media @medium{
+                        width: 100%;
+                    }
+
                     .middle-info{
-                        display:flex;
-                        justify-content: center;
+                        text-align: center;
+                    }
+                    .info{
+                        text-align: center;
                     }
                 }
             }
         }
-        .impact{
+
+    }
+
+}
+.impact{
+    .icon-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        .icons{
+            width: 23%;
+            height: auto;
+            margin: 0.5rem 0 0.5rem 0;
+            padding: 1rem;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            flex-direction: column;
             align-content: center;
-            .icons{
-                width: 24%;
-                height: auto;
-                margin: 0.5rem 0 0.5rem 0;
-                padding: 1rem;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                align-content: center;
-                .fas{
-                    display:flex;
-                    justify-content: center;
-                }
-                .icon-info{
-                    display:flex;
-                    justify-content: center;
-                    align-content: center;
-                    align-items: center;
-                }
+            @media @phone{
+                width: 100%;
+            }
+            .fas{
+                display:flex;
+                justify-content: center;
+                // color: green;
+            }
+            .icon-info{
+                text-align: center;
             }
         }
     }
-
 }
