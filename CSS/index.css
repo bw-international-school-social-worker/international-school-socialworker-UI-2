@@ -180,6 +180,8 @@ p {
 .main-navigation {
   background-color: #FAC4C8;
   border-bottom: 2px solid #680000;
+  width: 100%;
+  position: fixed;
 }
 .main-navigation .nav-container {
   display: flex;
@@ -196,7 +198,7 @@ p {
   justify-content: flex-start;
 }
 .main-navigation .nav-container .logo-container .logo {
-  width: 14rem;
+  width: 11rem;
   height: 15rem;
   padding-top: 1rem;
   margin-bottom: 0.5rem;
@@ -238,6 +240,7 @@ footer {
 }
 .top-middle-content {
   background-color: white;
+  padding-top: 16rem;
 }
 .top-middle-content .home {
   margin-top: 1.5rem;
