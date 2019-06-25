@@ -186,6 +186,11 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 800px) {
+  .main-navigation .nav-container {
+    justify-content: center;
+  }
+}
 .main-navigation .nav-container .logo-container {
   display: flex;
   justify-content: flex-start;
@@ -210,7 +215,7 @@ p {
   font-size: 1.8rem;
 }
 .main-navigation .nav-container .nav .nav-link {
-  margin-top: 7.5rem;
+  margin-top: 10rem;
   text-decoration: none;
   color: black;
   padding: 1.5rem;
@@ -294,6 +299,7 @@ footer {
 }
 .top-middle-content .home .carousel img {
   width: 100%;
+  display: none;
 }
 @media (max-width: 800px) {
   .top-middle-content .home .carousel img {
@@ -304,6 +310,9 @@ footer {
   .top-middle-content .home .carousel img {
     border-radius: 1.5rem;
   }
+}
+.top-middle-content .home .carousel .img-view {
+  display: inline-block;
 }
 .top-middle-content .home .carousel .btn {
   position: absolute;
