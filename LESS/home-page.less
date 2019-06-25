@@ -1,6 +1,6 @@
 .top-middle-content{
     
-    background-color: #635D5C;
+    background-color: white;
     .home{
         .carousel {
             .width-100();
@@ -17,11 +17,11 @@
               .flex(center);
               color: white;
               background-color:@educell-color;
-              font-size: 40px;
-              border-radius: 50%;
+              font-size: 35px;
+              border-radius: 40%;
               position: absolute;
               width: 50px;
-              height: 50px;
+              height: 43px;
               cursor: pointer;
               &:hover {
                 color: white;
@@ -43,6 +43,25 @@
               .width-100();
             //   display: none;
             }
+            .btn {
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                background-color: @educell-color;
+                color: white;
+                font-size: 16px;
+                padding: 12px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                font-family: 'Short Stack', cursive;
+              }
+              
+              .container .btn:hover {
+                background-color: black;
+              }
 
         }
         .middle-content{
@@ -53,7 +72,7 @@
             .boxes {
                 display: flex;
                 flex-wrap:wrap;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 height: 28rem;
                 .box {
                     width: 30%;
