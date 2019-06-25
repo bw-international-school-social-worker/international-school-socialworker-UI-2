@@ -221,3 +221,26 @@ p {
     margin-top: 0;
   }
 }
+.home .middle-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .middle-content .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 300px;
+}
+.home .middle-content .boxes .box {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  border: 2px solid #4C4F56;
+  border-radius: 2rem;
+}
