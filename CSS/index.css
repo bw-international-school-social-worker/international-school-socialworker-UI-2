@@ -147,27 +147,27 @@ h5 {
   font-family: 'Short Stack', cursive;
 }
 h1 {
-  font-size: 6.75rem;
+  font-size: 6.75EM;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.2em;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.6em;
   line-height: 1.4;
 }
 .container {
-  max-width: 1000px;
-  width: 100%;
+  max-width: 1100px;
+  width: 99%;
   margin: 0 auto;
 }
 @media (max-width: 800px) {
   .container {
     max-width: 800px;
-    width: 99%;
+    width: 98%;
     margin: 0 auto;
   }
 }
@@ -234,6 +234,9 @@ footer {
 .top-middle-content {
   background-color: white;
 }
+.top-middle-content .home {
+  margin-top: 1.5rem;
+}
 .top-middle-content .home .carousel {
   width: 100%;
   display: flex;
@@ -243,8 +246,20 @@ footer {
   height: 350px;
   position: relative;
   overflow: hidden;
-  margin-top: 16px;
-  border-radius: 20px;
+  margin-top: 1.75rem;
+  border-radius: 2.5rem;
+}
+@media (max-width: 800px) {
+  .top-middle-content .home .carousel {
+    height: 300px;
+    margin-top: 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .top-middle-content .home .carousel {
+    height: 250px;
+    margin-top: 0.5rem;
+  }
 }
 .top-middle-content .home .carousel .left-button,
 .top-middle-content .home .carousel .right-button {
@@ -280,6 +295,16 @@ footer {
 .top-middle-content .home .carousel img {
   width: 100%;
 }
+@media (max-width: 800px) {
+  .top-middle-content .home .carousel img {
+    border-radius: 1.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .top-middle-content .home .carousel img {
+    border-radius: 1.5rem;
+  }
+}
 .top-middle-content .home .carousel .btn {
   position: absolute;
   top: 90%;
@@ -288,7 +313,7 @@ footer {
   -ms-transform: translate(-50%, -50%);
   background-color: #680000;
   color: white;
-  font-size: 16px;
+  font-size: 1.8rem;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -332,7 +357,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
 }
 .top-middle-content .home .impact .icons {
   width: 24%;
@@ -351,4 +376,6 @@ footer {
 .top-middle-content .home .impact .icons .icon-info {
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
 }

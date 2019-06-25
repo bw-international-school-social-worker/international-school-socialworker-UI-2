@@ -2,18 +2,23 @@
     
     background-color: white;
     .home{
-
+        margin-top: 1.5rem;
         .carousel {
             .width-100();
             .flex(center, center);
             height: 350px;
             position: relative;
             overflow: hidden;
-            margin-top: 16px;
-            border-radius: 20px;
-            // @media(min-width: 1200px){
-            //   width: 1200px;
-            // }
+            margin-top: 1.75rem;
+            border-radius: 2.5rem;
+            @media @medium{
+              height:300px;
+              margin-top: 1.25rem;
+            }
+            @media @phone{
+                height:250px;
+                margin-top: 0.5rem;
+              }
             .left-button, .right-button {
               .flex(center);
               color: white;
@@ -43,6 +48,12 @@
             img {
               .width-100();
             //   display: none;
+                @media @medium{
+                    border-radius: 1.75rem;
+                }
+                @media @phone{
+                    border-radius: 1.5rem;
+                }
             }
             .btn {
                 position: absolute;
@@ -52,7 +63,7 @@
                 -ms-transform: translate(-50%, -50%);
                 background-color: @educell-color;
                 color: white;
-                font-size: 16px;
+                font-size: 1.8rem;
                 padding: 12px 24px;
                 border: none;
                 cursor: pointer;
@@ -70,7 +81,6 @@
             flex-wrap: wrap;
             justify-content: space-between;
             border-bottom: 1px solid black;
-
             .boxes {
                 display: flex;
                 flex-wrap:wrap;
@@ -101,7 +111,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            align-content: center;
             .icons{
                 width: 24%;
                 height: auto;
@@ -118,6 +128,8 @@
                 .icon-info{
                     display:flex;
                     justify-content: center;
+                    align-content: center;
+                    align-items: center;
                 }
             }
         }
