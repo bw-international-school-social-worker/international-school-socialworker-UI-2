@@ -1,9 +1,9 @@
 class Team {
-    constructor(domElement) {
+    constructor(element) {
       
-      this.domElement = domElement;
+      this.element = element;
       
-      this.expandButton = this.domElement.querySelector(".expandButton");
+      this.expandButton = this.element.querySelector(".expandButton");
       
       this.expandButton.innerHTML = 'Expand';
       
@@ -12,14 +12,14 @@ class Team {
   
     expandTeam() {
       
-      this.domElement.classList.toggle('expandButton');
+      this.element.classList.toggle('expandButton');
       if(this.expandButton.innerHTML === 'Expand') {
         this.expandButton.innerHTML = 'Close';
       } else {
         this.expandButton.innerHTML = 'Expand';
       }
-      this.domElement.classList.toggle('team-open');
-      this.domElement.classList.toggle('close');
+      this.element.classList.toggle('team-open');
+      this.element.classList.toggle('close');
     }
   }
   
