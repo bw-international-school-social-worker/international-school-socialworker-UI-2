@@ -464,11 +464,11 @@ footer {
     font-size: 1.4em;
   }
 }
-.teams {
+.about {
   margin-top: 95px;
   text-align: center;
 }
-.teams .team {
+.about .team {
   margin: 20px 10%;
   padding: 0 20px 25px;
   border: 1px solid lightgrey;
@@ -483,7 +483,7 @@ footer {
   align-content: center;
   flex-direction: column;
 }
-.teams .team .photo-style {
+.about .team .photo-style {
   width: 30em;
   height: 30em;
   overflow: hidden;
@@ -491,21 +491,21 @@ footer {
   border: 1px solid black;
   position: absolute;
 }
-.teams .team .team-photos {
+.about .team .team-photos {
   margin: 0 auto;
   height: 100%;
   width: auto;
 }
-.teams .team h3 {
+.about .team h3 {
   padding: 0 0 1em 0;
   margin: 12.5em 0 0;
 }
-.teams .team .close {
+.about .team .close {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.teams .team .expandButton {
+.about .team .expandButton {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -515,6 +515,14 @@ footer {
   transform: translate(-50%);
   background-color: white;
 }
-.teams .team-open {
+.about .team-open {
   height: auto;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: #680000;
+  color: #680000;
 }
