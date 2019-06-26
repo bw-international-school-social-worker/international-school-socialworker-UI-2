@@ -475,7 +475,7 @@ footer {
   border-radius: 10px;
   background-color: white;
   position: relative;
-  height: 35em;
+  height: 35.75em;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
   display: flex;
@@ -498,7 +498,7 @@ footer {
 }
 .teams .team h3 {
   padding: 0 0 1em 0;
-  margin: 14em 0 0;
+  margin: 12.5em 0 0;
 }
 .teams .team .close {
   position: absolute;
