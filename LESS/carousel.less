@@ -51,24 +51,77 @@
             border-radius: 1.5rem;
         }
     }
-}
-
-.btn {
+    .btn {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: @educell-color;
+      color: white;
+      font-size: 1.8rem;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-family: 'Short Stack', cursive;
+  }
+          
+  .container .btn:hover {
+    color: white;
+    background-color: grey;
+    border: 2px solid whitesmoke;
+  }
+  
+  .carousel-text {
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 35%;
+    left: 70%;
+    width: 43%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: @educell-color;
-    color: white;
-    font-size: 1.8rem;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Short Stack', cursive;
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    opacity: 0.8;
+    @media @medium {
+      top: 38%;
+      left: 65%;
+      width: 48%;
+    }
+    @media @phone {
+      top: 35%;
+      left: 60.5%;
+      width: 48%;
+    }
+    .carousel-text-info{
+      text-align: center;
+      color: white;
+    }
+    #carousel-h2 {
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 3.5em;
+      color: @educell-color;
+      
+      @media @medium{
+        font-size: 3em;
+      }
+      @media @phone{
+        font-size: 2.25em;
+      }
+    }
+    #carousel-p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2em;
+      
+      @media @medium{
+        font-size: 1.7em;
+      }
+      @media @phone{
+        font-size: 1.4em;
+      }
+    }
+  }
 }
-        
-.container .btn:hover {
-    background-color: black;
-}
+
+

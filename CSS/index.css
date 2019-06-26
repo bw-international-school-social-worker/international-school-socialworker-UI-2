@@ -181,7 +181,6 @@ p {
   background-color: #FAC4C8;
   border-bottom: 2px solid #680000;
   width: 100%;
-  position: fixed;
 }
 .main-navigation .nav-container {
   display: flex;
@@ -240,7 +239,7 @@ footer {
 }
 .top-middle-content {
   background-color: white;
-  padding-top: 16rem;
+  padding-top: 2rem;
 }
 .top-middle-content .home {
   margin-top: 1.5rem;
@@ -386,7 +385,7 @@ footer {
     border-radius: 1.5rem;
   }
 }
-.btn {
+.carousel .btn {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -401,6 +400,67 @@ footer {
   border-radius: 5px;
   font-family: 'Short Stack', cursive;
 }
-.container .btn:hover {
-  background-color: black;
+.carousel .container .btn:hover {
+  color: white;
+  background-color: grey;
+  border: 2px solid whitesmoke;
+}
+.carousel .carousel-text {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  width: 43%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: grey;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  opacity: 0.8;
+}
+@media (max-width: 800px) {
+  .carousel .carousel-text {
+    top: 38%;
+    left: 65%;
+    width: 48%;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .carousel-text {
+    top: 35%;
+    left: 60.5%;
+    width: 48%;
+  }
+}
+.carousel .carousel-text .carousel-text-info {
+  text-align: center;
+  color: white;
+}
+.carousel .carousel-text #carousel-h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3.5em;
+  color: #680000;
+}
+@media (max-width: 800px) {
+  .carousel .carousel-text #carousel-h2 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .carousel-text #carousel-h2 {
+    font-size: 2.25em;
+  }
+}
+.carousel .carousel-text #carousel-p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+}
+@media (max-width: 800px) {
+  .carousel .carousel-text #carousel-p {
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 500px) {
+  .carousel .carousel-text #carousel-p {
+    font-size: 1.4em;
+  }
 }
