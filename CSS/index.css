@@ -396,11 +396,11 @@ footer {
   font-size: 1.8rem;
   padding: 12px 24px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
   font-family: 'Short Stack', cursive;
+  cursor: pointer;
 }
-.carousel .container .btn:hover {
+.carousel .btn:hover {
   color: white;
   background-color: grey;
   border: 2px solid whitesmoke;
