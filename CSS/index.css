@@ -234,8 +234,10 @@ html {
   padding: 1.5rem;
 }
 .main-navigation .nav-container .nav .nav-link:hover {
-  color: #680000;
-  text-decoration: underline;
+  color: rgba(169, 169, 169, 0.7);
+  background-color: #680000;
+  border-radius: 4em;
+  transition: 0.4s ease-out;
 }
 @media (max-width: 800px) {
   .main-navigation .nav-container .nav .nav-link {
@@ -286,7 +288,6 @@ footer {
   border: 0.25em solid #680000;
   border-radius: 2rem;
   background-color: rgba(169, 169, 169, 0.7);
-  color: white;
 }
 @media (max-width: 800px) {
   .top-middle-content .home .middle-content .boxes .box {
@@ -299,6 +300,7 @@ footer {
 }
 .top-middle-content .home .middle-content .boxes .box .info {
   text-align: center;
+  color: white;
 }
 .impact {
   border-top: 1px solid black;
@@ -419,7 +421,7 @@ footer {
   font-size: 1.4em;
 }
 .bottom-content .btn2:hover {
-  transition: 0.3s ease all;
+  transition: 0.5s ease all;
   color: white;
   background-color: rgba(169, 169, 169, 0.7);
   border: 2px solid whitesmoke;
@@ -513,7 +515,7 @@ footer {
   cursor: pointer;
 }
 .carousel .btn:hover {
-  transition: 0.3s ease all;
+  transition: 0.5s ease-in;
   color: white;
   background-color: rgba(169, 169, 169, 0.7);
   border: 2px solid whitesmoke;
