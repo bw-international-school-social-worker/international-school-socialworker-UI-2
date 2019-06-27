@@ -506,6 +506,7 @@ footer {
   -ms-transform: translate(-50%, -50%);
   background-color: #680000;
   color: white;
+  text-decoration: none;
   font-size: 1.8rem;
   padding: 12px 24px;
   border: none;
