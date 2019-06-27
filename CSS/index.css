@@ -203,6 +203,12 @@ p {
   margin-bottom: 0.5rem;
   object-fit: contain;
 }
+@media (max-width: 800px) {
+  .main-navigation .nav-container .logo-container .logo {
+    margin-right: 14em;
+    margin-left: 14em;
+  }
+}
 .main-navigation .nav-container .nav {
   display: flex;
   justify-content: space-evenly;
@@ -210,11 +216,6 @@ p {
   margin: 0.15rem;
   padding: 0.15rem;
   font-size: 1.7rem;
-}
-@media (max-width: 800px) {
-  .main-navigation .nav-container .nav {
-    padding-left: 5em;
-  }
 }
 .main-navigation .nav-container .nav .nav-link {
   margin: 1em 0 0.5em 0;
