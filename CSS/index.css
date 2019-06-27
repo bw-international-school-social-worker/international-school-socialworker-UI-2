@@ -257,7 +257,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px solid black;
 }
 .top-middle-content .home .middle-content .boxes {
   display: flex;
@@ -298,6 +297,12 @@ footer {
 .top-middle-content .home .middle-content .boxes .box .info {
   text-align: center;
 }
+.impact {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
 .impact .icon-section {
   display: flex;
   flex-wrap: wrap;
@@ -326,6 +331,95 @@ footer {
 }
 .impact .icon-section .icons .icon-info {
   text-align: center;
+}
+.bottom-content .international {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bottom-content .international .international-text {
+  text-align: center;
+  width: 40%;
+}
+@media (max-width: 800px) {
+  .bottom-content .international .international-text {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-content .international .international-text {
+    width: 100%;
+  }
+}
+.bottom-content .international .international-image {
+  width: 38em;
+  height: auto;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .bottom-content .international .international-image {
+    width: 32em;
+  }
+}
+.bottom-content .donations {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .bottom-content .donations {
+    flex-direction: column-reverse;
+  }
+}
+.bottom-content .donations .donation-text {
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 40%;
+}
+@media (max-width: 800px) {
+  .bottom-content .donations .donation-text {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-content .donations .donation-text {
+    width: 100%;
+  }
+}
+.bottom-content .donations .donation-text .donation-button {
+  display: flex;
+  justify-content: center;
+}
+.bottom-content .donations .donations-image {
+  width: 45em;
+  height: auto;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .bottom-content .donations .donations-image {
+    width: 30em;
+  }
+}
+.bottom-content .btn2 {
+  background-color: #680000;
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+}
+.bottom-content .btn2:hover {
+  transition: 0.3s ease all;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.7);
+  border: 2px solid whitesmoke;
 }
 .carousel {
   width: 100%;
