@@ -283,7 +283,7 @@ footer {
   flex-direction: column;
   border: 0.25em solid #680000;
   border-radius: 2rem;
-  background-color: rgba(189, 195, 199, 0.7);
+  background-color: rgba(128, 128, 128, 0.7);
 }
 @media (max-width: 800px) {
   .top-middle-content .home .middle-content .boxes .box {
@@ -368,7 +368,7 @@ footer {
 .carousel .right-button:hover {
   transition: 0.3s ease all;
   color: white;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.7);
   border: 2px solid whitesmoke;
 }
 .carousel .left-button {
@@ -415,7 +415,7 @@ footer {
 .carousel .btn:hover {
   transition: 0.3s ease all;
   color: white;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.7);
   border: 2px solid whitesmoke;
 }
 .carousel .carousel-text {
@@ -425,7 +425,7 @@ footer {
   width: 43%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: rgba(128, 128, 128, 0.8);
+  background-color: rgba(128, 128, 128, 0.7);
   padding: 1rem;
   border-radius: 1.5rem;
 }
