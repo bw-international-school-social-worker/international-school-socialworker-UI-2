@@ -1,4 +1,26 @@
 
+.about-content{
+  .about-title{
+    text-align: center;
+    margin-top: 2em;
+  }
+  .about-title-info{
+    display: flex;
+    justify-content: space-evenly;
+    .about-drawing{
+      width: 45%;
+      height: auto;
+      overflow: hidden;
+    }
+    .about-text{
+      width: 45%;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }  
+  }
+}
 .about {
     margin-top: 5em;
     text-align: center;
@@ -43,6 +65,7 @@
       position: absolute;
       top: 10px;
       right: 10px;
+      transition: 4s ease-in;
     }
   
     .expandButton {
@@ -59,6 +82,7 @@
   
   .team-open {
     height: auto;
+    transition: 4s ease-out;
   }
 }
 
@@ -66,27 +90,28 @@
     display: flex;
     justify-content: center;
     align-content: space-evenly;
-    padding: 1em;
-    
+    padding: 0.5em;
+    margin-bottom:1.5em;
+    button{
+      background-color: @educell-color;
+      padding: 0.5em;
+      display: flex;
+      margin-right: 0.5em;
+      margin-left:0.5em;
+      border: none;
+      // border: 0.25em solid black;
+      border-radius: 1em;
+      color: white;
+      &:hover {
+        transition: 0.3s ease all;
+        color: white;
+        background-color: @educell-grey;
+        border: 2px solid whitesmoke;
+      }
+    }
 
 }
-button{
-  background-color: @educell-color;
-  padding: 1em;
-  display: flex;
-  margin-right: 1em;
-  margin-left:1em;
-  border: none;
-  // border: 0.25em solid black;
-  border-radius: 1em;
-  color: white;
-  &:hover {
-    transition: 0.3s ease all;
-    color: white;
-    background-color: @educell-grey;
-    border: 2px solid whitesmoke;
-  }
-}
+
 .githubicon{
   width:4em;
   height:auto;
@@ -99,22 +124,5 @@ button{
     color: @educell-color;
   }
 }
-.about-title{
-  text-align: center;
-}
-.about-title-info{
-  display: flex;
-  justify-content: space-evenly;
-  .about-drawing{
-    width: 45%;
-    height: auto;
-    overflow: hidden;
-  }
-  .about-text{
-    width: 45%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }  
-}
+
+

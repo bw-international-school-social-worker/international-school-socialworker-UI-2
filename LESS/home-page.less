@@ -7,7 +7,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            border-bottom: 1px solid black;
             .boxes {
                 display: flex;
                 flex-wrap:wrap;
@@ -30,8 +29,7 @@
                     flex-direction: column;
                     border: 0.25em solid @educell-color;
                     border-radius: 2rem;
-                    background-color:@educell-grey;
-                    color: white;
+
                 
                     @media @medium{
                         width: 100%;
@@ -51,6 +49,10 @@
     }
 }
 .impact{
+    border-top: 1px solid @educell-color;
+    border-bottom: 1px solid @educell-color;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     .icon-section{
         display: flex;
         flex-wrap: wrap;
@@ -79,4 +81,88 @@
             }
         }
     }
+}
+
+.bottom-content{
+
+    .international{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .international-text{
+            text-align: center;
+            width: 40%;
+            @media @medium{
+                width: 30%;
+            }
+            @media @phone{
+                width: 100%;
+            }
+        }
+        .international-image{
+            width: 38em;
+            height: auto;
+            overflow: hidden;
+            @media @medium{
+                width: 32em;
+            }
+
+        }
+    }
+    .donations{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        @media @phone{
+            flex-direction:column-reverse;
+        }
+
+        .donation-text{
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            width: 40%;
+
+            @media @medium{
+                width: 30%;
+            }
+            @media @phone{
+                width: 100%;
+            }
+            .donation-button{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .donations-image{
+            width: 45em;
+            height: auto;
+            overflow: hidden;
+            @media @medium{
+                width: 30em;
+            }
+        }
+    }
+
+    .btn2 {
+        background-color: @educell-color;
+        color: white;
+        margin:0;
+        font-size: 1.8rem;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: @bodyfont;
+        font-size: 1.4em;
+    
+        &:hover {
+        transition: 0.5s ease all;
+        color: white;
+        background-color: @educell-grey;
+        border: 2px solid whitesmoke;
+        }
+    } 
 }
