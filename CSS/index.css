@@ -136,7 +136,8 @@ html {
   font-size: 62.5%;
 }
 html,
-body {
+body,
+a {
   font-family: 'Raleway', sans-serif;
 }
 h1,
@@ -213,14 +214,20 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  align-items: center;
   margin: 0.15rem;
   padding: 0.15rem;
-  font-size: 1.7rem;
+  font-size: 1.7em;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav {
+    font-size: 1.5em;
+  }
 }
 .main-navigation .nav-container .nav .nav-link {
   margin: 1em 0 0.5em 0;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 1.5rem;
 }
 .main-navigation .nav-container .nav .nav-link:hover {
@@ -274,9 +281,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 0.5rem solid #680000;
+  border: 0.25em solid #680000;
   border-radius: 2rem;
-  background-color: #FFF1EF;
+  background-color: rgba(189, 195, 199, 0.7);
 }
 @media (max-width: 800px) {
   .top-middle-content .home .middle-content .boxes .box {
@@ -418,10 +425,9 @@ footer {
   width: 43%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.8);
   padding: 1rem;
   border-radius: 1.5rem;
-  opacity: 0.8;
 }
 @media (max-width: 800px) {
   .carousel .carousel-text {
