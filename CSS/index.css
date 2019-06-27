@@ -287,7 +287,6 @@ footer {
   flex-direction: column;
   border: 0.25em solid #680000;
   border-radius: 2rem;
-  background-color: rgba(169, 169, 169, 0.7);
 }
 @media (max-width: 800px) {
   .top-middle-content .home .middle-content .boxes .box {
@@ -300,7 +299,6 @@ footer {
 }
 .top-middle-content .home .middle-content .boxes .box .info {
   text-align: center;
-  color: white;
 }
 .impact {
   border-top: 1px solid black;
