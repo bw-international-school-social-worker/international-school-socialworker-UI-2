@@ -13,89 +13,112 @@
   <link href="css/index.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/354898ddb2.js"></script>
   <script src="JS/about.js" async></script>
+  <script src="JS/about-tabs.js" async></script>
 
 </head>
 <body>
     <header class="main-navigation">
         <div class="container nav-container">
           <div class="logo-container">
-              <img class="logo" src="IMG/ISSW-Logo.png" alt="Internation School Social Worker Logo.">
-              <h1 class=logo-words>ducell</h1>
+              <img class="logo" src="IMG/educell-logo.png" alt="Internation School Social Worker Logo.">
           </div>
   
           <nav class="nav">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="about.html">About Us</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Contact Us</a>
             <a class="nav-link" href="#">Login</a>
           </nav>
         </div>
     </header>
     <section class= "about-content">
-        <h2>About Us</h2>
-        <div class="container about">
-            <div class = "teams">
-                <div class="team">
-                    <div class="photo-style">
-                        <img class="team-photos" src="IMG/zech.JPG" alt ="Photo of Zechariah">
-                    </div>
-                    <h3>Zechariah - Team Lead</h3>
-                    
-                    <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                    moff wicket tatooine luke.</p>
-                    <span class='expandButton'></span>
-                </div>
-                <div class="team">
-                    <div class="photo-style">
-                        <img class="team-photos" src="IMG/vivek.JPG" alt ="Photo of Vivek">
-                    </div>
-                    <h3>Vivek - Backend</h3>
-                        
-                    <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                    moff wicket tatooine luke.</p>
-                    <span class='expandButton'></span>
-                </div>
-                <div class="team">
-                    <div class="photo-style">
-                        <img class="team-photos" src="IMG/isaias.JPG" alt ="Photo of Isaias">
-                    </div>
-                    <h3>Isaias - Frontend</h3>
-                            
-                    <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                    moff wicket tatooine luke.</p>
-                    <span class='expandButton'></span>
-                </div>
-                <div class="team">
-                    <div class="photo-style">
-                        <img class="team-photos" src="IMG/blaine.JPG" alt ="Photo of Blaine">
-                    </div>
-                    <h3>Blaine - UI</h3>
-                                
-                    <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                    moff wicket tatooine luke. </p>
-                    <span class='expandButton'></span>
-                </div>
-                <div class="team">
-                    <div class="photo-style">
-                        <img class="team-photos" src="IMG/ryan.JPG" alt ="Photo of Ryan">
-                    </div>
-                    <h3>Ryan - UI</h3>
-                                    
-                    <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                    moff wicket tatooine luke.</p>
-                    <span class='expandButton'></span>
-                </div>
-                <div class="team">
-                    <div class="photo-style">
-                        <img class="team-photos" src="IMG/mariam.JPG" alt ="Photo of Mariam">
-                    </div>
-                    <h3>Mariam - UI</h3>
-                                        
-                    <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-                    moff wicket tatooine luke.</p>
-                    <span class='expandButton'></span>
+            <div class="about-title">
+                    <h2>About Us</h2>
+            </div>
+            <div class="about-title-info">
+                <img class="about-drawing" src="IMG/about-image.png">
+                <div class="about-text">
+                    <p>We are a team dedicated to provding tools and resources to underserved schools around the world. With Educell, we are determined to help schools provide quality and custom education to students in need.</p>
                 </div>
             </div>
+        <div class="container about">
+
+            <div class="tabs">
+                <button data-tab="all" class="tab .active-tab">ALL</button>
+                <button data-tab="backend" class="tab .active-tab">Backend</button>
+                <button data-tab="frontend" class="tab .active-tab">Frontend</button>
+                <button data-tab="team-lead" class="tab .active-tab">Team Lead</button>
+                <button data-tab="ui" class="tab .active-tab">UI</button>
+            </div>
+            <h3>Our Team</h3>
+                <div class="card" data-tab="team-lead">
+                    <div class="team">
+                        <div class="photo-style">
+                            <img class="team-photos" src="IMG/zech.JPG" alt ="Photo of Zechariah">
+                        </div>
+                        <h3>Zechariah - Team Lead</h3>
+                        
+                        <p><a href="https://github.com/Zechdrink"> <img class="githubicon" src="IMG/github.png"></a> Zechdrink </p>
+                        <span class='expandButton'></span>
+                    </div>
+                </div>
+                <div class="card" data-tab="backend">
+                    <div class="team">
+                        <div class="photo-style">
+                            <img class="team-photos" src="IMG/vivek.JPG" alt ="Photo of Vivek">
+                        </div>
+                        <h3>Vivek - Backend</h3>
+                            
+                        <p><a href="https://github.com/VivekV95"><img class="githubicon" src="IMG/github.png"></a> VivekV95 </p>
+                        <span class='expandButton'></span>
+                    </div>
+                </div>
+                <div class="card" data-tab="frontend">
+                    <div class="team">
+                        <div class="photo-style">
+                            <img class="team-photos" src="IMG/isaias.JPG" alt ="Photo of Isaias">
+                        </div>
+                        <h3>Isaias - Frontend</h3>
+                                
+                        <p><a href="https://github.com/isaiasGA"><img class="githubicon" src="IMG/github.png"></a> isaiasGA </p>
+                        <span class='expandButton'></span>
+                    </div>
+                </div>
+                <div class="card" data-tab="ui">
+                    <div class="team">
+                        <div class="photo-style">
+                            <img class="team-photos" src="IMG/mariam.JPG" alt ="Photo of Mariam">
+                        </div>
+                        <h3>Mariam - UI Developer</h3>
+                                                
+                        <p><a href="https://github.com/mariam-farrukh"><img class="githubicon" src="IMG/github.png"></a> mariam-farrukh </p>
+                        <span class='expandButton'></span>
+                    </div>
+                </div>
+                <div class="card" data-tab="ui">
+                    <div class="team">
+                        <div class="photo-style">
+                            <img class="team-photos" src="IMG/ryan.JPG" alt ="Photo of Ryan">
+                        </div>
+                        <h3>Ryan - UI Developer</h3>
+                                        
+                        <p>Take a look at <a class="site" href="https://xenodochial-varahamihira-471335.netlify.com">Ryan's website</a>!</p>
+                        <p><a href="https://github.com/74ultra"><img class="githubicon" src="IMG/github.png"></a> 74ultra </p>
+                        <span class='expandButton'></span>
+                    </div>
+                </div>
+                <div class="card" data-tab="ui">
+                    <div class="team">
+                        <div class="photo-style">
+                            <img class="team-photos" src="IMG/blaine.JPG" alt ="Photo of Blaine">
+                        </div>
+                        <h3>Blaine - UI Developer</h3>
+                                        
+                        <p>Take a look at  <a class="site" href="https://quirky-northcutt-61e8e5.netlify.com/">Blaine's website</a>!</p>
+                        <p><a href="https://github.com/bquizza5"><img class="githubicon" src="IMG/github.png"></a> bquizza5 </p>
+                        <span class='expandButton'></span>
+                    </div>
+                </div>     
         </div>
     </section>
 

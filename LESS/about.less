@@ -1,11 +1,10 @@
-// .about{
-//     background-color: pink;
-// }
-.teams {
-    margin-top: 95px;
+
+.about {
+    margin-top: 5em;
     text-align: center;
+
   .team {
-    margin: 20px 10%;
+    margin: 5em 10%;
     padding: 0 20px 25px;
     border: 1px solid lightgrey;
     border-radius: 10px;
@@ -24,7 +23,7 @@
         height: 30em;
         overflow: hidden;
         border-radius: 50%;
-        border: 1px solid black;
+        border: 0.2em solid @educell-color;
         position: absolute;
         
     }
@@ -61,4 +60,61 @@
   .team-open {
     height: auto;
   }
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    padding: 1em;
+    
+
+}
+button{
+  background-color: @educell-color;
+  padding: 1em;
+  display: flex;
+  margin-right: 1em;
+  margin-left:1em;
+  border: none;
+  // border: 0.25em solid black;
+  border-radius: 1em;
+  color: white;
+  &:hover {
+    transition: 0.3s ease all;
+    color: white;
+    background-color: @educell-grey;
+    border: 2px solid whitesmoke;
+  }
+}
+.githubicon{
+  width:4em;
+  height:auto;
+}
+.site{
+  text-decoration: none;
+  color: black;
+  &:hover{
+    transition: 0.5s ease all;
+    color: @educell-color;
+  }
+}
+.about-title{
+  text-align: center;
+}
+.about-title-info{
+  display: flex;
+  justify-content: space-evenly;
+  .about-drawing{
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+  }
+  .about-text{
+    width: 45%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }  
 }

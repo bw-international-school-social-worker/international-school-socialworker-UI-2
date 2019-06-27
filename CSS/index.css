@@ -136,15 +136,16 @@ html {
   font-size: 62.5%;
 }
 html,
-body {
-  font-family: 'Short Stack', cursive;
+body,
+a {
+  font-family: 'Raleway', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Short Stack', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 h1 {
   font-size: 6.75EM;
@@ -197,28 +198,36 @@ p {
   justify-content: flex-start;
 }
 .main-navigation .nav-container .logo-container .logo {
-  width: 11rem;
-  height: 15rem;
+  width: 15em;
+  height: 8em;
   padding-top: 1rem;
   margin-bottom: 0.5rem;
   object-fit: contain;
 }
-.main-navigation .nav-container .logo-container .logo-words {
-  margin-top: 8rem;
-  margin-bottom: 0.5rem;
+@media (max-width: 800px) {
+  .main-navigation .nav-container .logo-container .logo {
+    margin-right: 14em;
+    margin-left: 14em;
+  }
 }
 .main-navigation .nav-container .nav {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  align-items: center;
   margin: 0.15rem;
   padding: 0.15rem;
-  font-size: 1.8rem;
+  font-size: 1.7em;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav {
+    font-size: 1.5em;
+  }
 }
 .main-navigation .nav-container .nav .nav-link {
-  margin-top: 10rem;
+  margin: 1em 0 0.5em 0;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 1.5rem;
 }
 .main-navigation .nav-container .nav .nav-link:hover {
@@ -267,14 +276,15 @@ footer {
 .top-middle-content .home .middle-content .boxes .box {
   width: 32%;
   height: auto;
-  margin: 0.5rem 0 0.5rem 0;
-  padding: 0.5rem;
+  margin: 0.75rem 0 0.75rem 0;
+  padding: 2em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 0.5rem solid #680000;
+  border: 0.25em solid #680000;
   border-radius: 2rem;
-  background-color: #FFF1EF;
+  background-color: rgba(128, 128, 128, 0.7);
+  color: white;
 }
 @media (max-width: 800px) {
   .top-middle-content .home .middle-content .boxes .box {
@@ -283,6 +293,7 @@ footer {
 }
 .top-middle-content .home .middle-content .boxes .box .middle-info {
   text-align: center;
+  border-bottom: 0.07em solid #680000;
 }
 .top-middle-content .home .middle-content .boxes .box .info {
   text-align: center;
@@ -322,7 +333,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 350px;
+  height: 50em;
   position: relative;
   overflow: hidden;
   margin-top: 1.75rem;
@@ -330,14 +341,14 @@ footer {
 }
 @media (max-width: 800px) {
   .carousel {
-    height: 300px;
     margin-top: 1.25rem;
+    height: 35em;
   }
 }
 @media (max-width: 500px) {
   .carousel {
-    height: 250px;
     margin-top: 0.5rem;
+    height: 28em;
   }
 }
 .carousel .left-button,
@@ -357,19 +368,22 @@ footer {
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
+  transition: 0.3s ease all;
   color: white;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.7);
   border: 2px solid whitesmoke;
 }
 .carousel .left-button {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
+  transition: 0.3s ease all;
 }
 .carousel .right-button {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
+  transition: 0.3s ease all;
 }
 .carousel img {
   width: 100%;
@@ -397,38 +411,38 @@ footer {
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
-  font-family: 'Short Stack', cursive;
+  font-family: 'Raleway', sans-serif;
   cursor: pointer;
 }
 .carousel .btn:hover {
+  transition: 0.3s ease all;
   color: white;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.7);
   border: 2px solid whitesmoke;
 }
 .carousel .carousel-text {
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 70%;
   width: 43%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.7);
   padding: 1rem;
   border-radius: 1.5rem;
-  opacity: 0.8;
 }
 @media (max-width: 800px) {
   .carousel .carousel-text {
-    top: 38%;
+    top: 36%;
     left: 65%;
-    width: 48%;
+    width: 50%;
   }
 }
 @media (max-width: 500px) {
   .carousel .carousel-text {
-    top: 35%;
+    top: 40%;
     left: 60.5%;
-    width: 48%;
+    width: 55%;
   }
 }
 .carousel .carousel-text .carousel-text-info {
@@ -436,7 +450,7 @@ footer {
   color: white;
 }
 .carousel .carousel-text #carousel-h2 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 3.5em;
   color: #680000;
 }
@@ -464,12 +478,12 @@ footer {
     font-size: 1.4em;
   }
 }
-.teams {
-  margin-top: 95px;
+.about {
+  margin-top: 5em;
   text-align: center;
 }
-.teams .team {
-  margin: 20px 10%;
+.about .team {
+  margin: 5em 10%;
   padding: 0 20px 25px;
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -483,29 +497,29 @@ footer {
   align-content: center;
   flex-direction: column;
 }
-.teams .team .photo-style {
+.about .team .photo-style {
   width: 30em;
   height: 30em;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 0.2em solid #680000;
   position: absolute;
 }
-.teams .team .team-photos {
+.about .team .team-photos {
   margin: 0 auto;
   height: 100%;
   width: auto;
 }
-.teams .team h3 {
+.about .team h3 {
   padding: 0 0 1em 0;
   margin: 12.5em 0 0;
 }
-.teams .team .close {
+.about .team .close {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.teams .team .expandButton {
+.about .team .expandButton {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -515,6 +529,59 @@ footer {
   transform: translate(-50%);
   background-color: white;
 }
-.teams .team-open {
+.about .team-open {
   height: auto;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 1em;
+}
+button {
+  background-color: #680000;
+  padding: 1em;
+  display: flex;
+  margin-right: 1em;
+  margin-left: 1em;
+  border: none;
+  border-radius: 1em;
+  color: white;
+}
+button:hover {
+  transition: 0.3s ease all;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.7);
+  border: 2px solid whitesmoke;
+}
+.githubicon {
+  width: 4em;
+  height: auto;
+}
+.site {
+  text-decoration: none;
+  color: black;
+}
+.site:hover {
+  transition: 0.5s ease all;
+  color: #680000;
+}
+.about-title {
+  text-align: center;
+}
+.about-title-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-title-info .about-drawing {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+}
+.about-title-info .about-text {
+  width: 45%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }

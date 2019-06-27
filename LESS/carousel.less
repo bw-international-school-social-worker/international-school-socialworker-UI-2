@@ -1,18 +1,18 @@
 .carousel {
     .width-100();
     .flex(center, center);
-    height: 350px;
+    height: 50em;
     position: relative;
     overflow: hidden;
     margin-top: 1.75rem;
     border-radius: 2.5rem;
     @media @medium{
-      height:300px;
       margin-top: 1.25rem;
+      height:35em;
     }
     @media @phone{
-        height:250px;
         margin-top: 0.5rem;
+        height:28em;
     }
     .left-button, .right-button {
       .flex(center);
@@ -26,8 +26,9 @@
     //   opacity: 0.3;
       cursor: pointer;
       &:hover {
+        transition: 0.3s ease all;
         color: white;
-        background-color: grey;
+        background-color: @educell-grey;
         border: 2px solid whitesmoke;
       }
     }
@@ -35,11 +36,13 @@
       top: 50%; 
       left: 25px;
       transform: translate(0, -50%);
+      transition: 0.3s ease all;
     }
     .right-button {
       top: 50%; 
       right: 25px;
       transform: translate(0, -50%);
+      transition: 0.3s ease all;
     }
     img {
         .width-100();
@@ -64,42 +67,42 @@
       border: none;
       cursor: pointer;
       border-radius: 5px;
-      font-family: 'Short Stack', cursive;
+      font-family: @bodyfont;
       cursor: pointer;    
       &:hover {
+        transition: 0.3s ease all;
         color: white;
-        background-color: grey;
+        background-color: @educell-grey;
         border: 2px solid whitesmoke;
       }
     }  
   
   .carousel-text {
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 70%;
     width: 43%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: grey;
+    background-color: @educell-grey;
     padding: 1rem;
     border-radius: 1.5rem;
-    opacity: 0.8;
     @media @medium {
-      top: 38%;
+      top: 36%;
       left: 65%;
-      width: 48%;
+      width: 50%;
     }
     @media @phone {
-      top: 35%;
+      top: 40%;
       left: 60.5%;
-      width: 48%;
+      width: 55%;
     }
     .carousel-text-info{
       text-align: center;
       color: white;
     }
     #carousel-h2 {
-      font-family: 'Fjalla One', sans-serif;
+      font-family: @headingfont;
       font-size: 3.5em;
       color: @educell-color;
       
