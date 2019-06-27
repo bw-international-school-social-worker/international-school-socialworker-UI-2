@@ -565,3 +565,22 @@ button:hover {
   transition: 0.5s ease all;
   color: #680000;
 }
+.about-title {
+  text-align: center;
+}
+.about-title-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-title-info .about-drawing {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+}
+.about-title-info .about-text {
+  width: 45%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
