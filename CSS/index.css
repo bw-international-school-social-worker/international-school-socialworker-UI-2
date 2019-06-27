@@ -572,6 +572,26 @@ footer {
     font-size: 1.4em;
   }
 }
+.about-content .about-title {
+  text-align: center;
+  margin-top: 2em;
+}
+.about-content .about-title-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-content .about-title-info .about-drawing {
+  width: 45%;
+  height: auto;
+  overflow: hidden;
+}
+.about-content .about-title-info .about-text {
+  width: 45%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .about {
   margin-top: 5em;
   text-align: center;
@@ -660,24 +680,4 @@ footer {
 .site:hover {
   transition: 0.5s ease all;
   color: #680000;
-}
-.about-content .about-title {
-  text-align: center;
-  margin-top: 2em;
-}
-.about-content .about-title-info {
-  display: flex;
-  justify-content: space-evenly;
-}
-.about-content .about-title-info .about-drawing {
-  width: 45%;
-  height: auto;
-  overflow: hidden;
-}
-.about-content .about-title-info .about-text {
-  width: 45%;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
