@@ -630,19 +630,20 @@ footer {
   display: flex;
   justify-content: center;
   align-content: space-evenly;
-  padding: 1em;
+  padding: 0.5em;
+  margin-bottom: 1.5em;
 }
-button {
+.tabs button {
   background-color: #680000;
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
-  margin-right: 1em;
-  margin-left: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
   border: none;
   border-radius: 1em;
   color: white;
 }
-button:hover {
+.tabs button:hover {
   transition: 0.3s ease all;
   color: white;
   background-color: rgba(128, 128, 128, 0.7);
@@ -662,6 +663,7 @@ button:hover {
 }
 .about-title {
   text-align: center;
+  margin-top: 2em;
 }
 .about-title-info {
   display: flex;

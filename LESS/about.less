@@ -66,27 +66,28 @@
     display: flex;
     justify-content: center;
     align-content: space-evenly;
-    padding: 1em;
-    
+    padding: 0.5em;
+    margin-bottom:1.5em;
+    button{
+      background-color: @educell-color;
+      padding: 0.5em;
+      display: flex;
+      margin-right: 0.5em;
+      margin-left:0.5em;
+      border: none;
+      // border: 0.25em solid black;
+      border-radius: 1em;
+      color: white;
+      &:hover {
+        transition: 0.3s ease all;
+        color: white;
+        background-color: @educell-grey;
+        border: 2px solid whitesmoke;
+      }
+    }
 
 }
-button{
-  background-color: @educell-color;
-  padding: 1em;
-  display: flex;
-  margin-right: 1em;
-  margin-left:1em;
-  border: none;
-  // border: 0.25em solid black;
-  border-radius: 1em;
-  color: white;
-  &:hover {
-    transition: 0.3s ease all;
-    color: white;
-    background-color: @educell-grey;
-    border: 2px solid whitesmoke;
-  }
-}
+
 .githubicon{
   width:4em;
   height:auto;
@@ -101,6 +102,7 @@ button{
 }
 .about-title{
   text-align: center;
+  margin-top: 2em;
 }
 .about-title-info{
   display: flex;
