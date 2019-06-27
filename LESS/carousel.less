@@ -26,6 +26,7 @@
     //   opacity: 0.3;
       cursor: pointer;
       &:hover {
+        transition: 0.3s ease all;
         color: white;
         background-color: grey;
         border: 2px solid whitesmoke;
@@ -35,11 +36,13 @@
       top: 50%; 
       left: 25px;
       transform: translate(0, -50%);
+      transition: 0.3s ease all;
     }
     .right-button {
       top: 50%; 
       right: 25px;
       transform: translate(0, -50%);
+      transition: 0.3s ease all;
     }
     img {
         .width-100();
@@ -64,9 +67,10 @@
       border: none;
       cursor: pointer;
       border-radius: 5px;
-      font-family: 'Short Stack', cursive;
+      font-family: @bodyfont;
       cursor: pointer;    
       &:hover {
+        transition: 0.3s ease all;
         color: white;
         background-color: grey;
         border: 2px solid whitesmoke;
@@ -99,7 +103,7 @@
       color: white;
     }
     #carousel-h2 {
-      font-family: 'Fjalla One', sans-serif;
+      font-family: @headingfont;
       font-size: 3.5em;
       color: @educell-color;
       

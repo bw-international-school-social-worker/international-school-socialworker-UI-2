@@ -137,14 +137,14 @@ html {
 }
 html,
 body {
-  font-family: 'Short Stack', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Short Stack', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 h1 {
   font-size: 6.75EM;
@@ -357,6 +357,7 @@ footer {
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
+  transition: 0.3s ease all;
   color: white;
   background-color: grey;
   border: 2px solid whitesmoke;
@@ -365,11 +366,13 @@ footer {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
+  transition: 0.3s ease all;
 }
 .carousel .right-button {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
+  transition: 0.3s ease all;
 }
 .carousel img {
   width: 100%;
@@ -397,10 +400,11 @@ footer {
   padding: 12px 24px;
   border: none;
   border-radius: 5px;
-  font-family: 'Short Stack', cursive;
+  font-family: 'Raleway', sans-serif;
   cursor: pointer;
 }
 .carousel .btn:hover {
+  transition: 0.3s ease all;
   color: white;
   background-color: grey;
   border: 2px solid whitesmoke;
@@ -436,7 +440,7 @@ footer {
   color: white;
 }
 .carousel .carousel-text #carousel-h2 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 3.5em;
   color: #680000;
 }
